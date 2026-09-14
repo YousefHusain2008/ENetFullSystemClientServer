@@ -1,0 +1,30 @@
+cat > .gitignore << 'EOF'
+# Visual Studio build outputs
+Debug/
+Release/
+x64/
+x86/
+bin/
+obj/
+
+# Visual Studio user/cache files
+.vs/
+*.user
+*.suo
+
+# MSBuild / linker intermediates
+*.tlog
+*.log
+*.recipe
+*.obj
+*.exp
+*.pdb
+*.ilk
+*.idb
+
+# Release artifacts (share separately)
+*.zip
+
+# Scratch files
+folder_tree.txt
+EOF
