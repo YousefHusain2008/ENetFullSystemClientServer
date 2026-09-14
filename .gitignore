@@ -1,12 +1,30 @@
-# Build outputs
+cat > .gitignore << 'EOF'
+# Visual Studio build outputs
+Debug/
+Release/
+x64/
+x86/
 bin/
 obj/
 
-# IDE
+# Visual Studio user/cache files
 .vs/
-.idea/
 *.user
+*.suo
 
-# Publish outputs
-publish/
+# MSBuild / linker intermediates
+*.tlog
+*.log
+*.recipe
+*.obj
+*.exp
+*.pdb
+*.ilk
+*.idb
+
+# Release artifacts (share separately)
 *.zip
+
+# Scratch files
+folder_tree.txt
+EOF
